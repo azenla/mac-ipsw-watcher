@@ -1,0 +1,9 @@
+disabled_rules:
+- type_name
+- force_cast
+- force_try
+- trailing_comma
+- nesting
+- large_tuple
+- cyclomatic_complexity
+line_length: 190

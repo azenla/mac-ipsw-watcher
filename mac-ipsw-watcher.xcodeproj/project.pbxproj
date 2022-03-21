@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2AAE43A827E850FB005A8EE0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE43A727E850FB005A8EE0 /* main.swift */; };
+		2AAE43AF27E85254005A8EE0 /* CryptoExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAE43AE27E85254005A8EE0 /* CryptoExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		2AAE43A427E850FB005A8EE0 /* mac-ipsw-watcher */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "mac-ipsw-watcher"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AAE43A727E850FB005A8EE0 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2AAE43AE27E85254005A8EE0 /* CryptoExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoExtensions.swift; sourceTree = "<group>"; };
+		2AAE43B027E8547C005A8EE0 /* mac-ipsw-watcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "mac-ipsw-watcher.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		2AAE43A627E850FB005A8EE0 /* mac-ipsw-watcher */ = {
 			isa = PBXGroup;
 			children = (
+				2AAE43B027E8547C005A8EE0 /* mac-ipsw-watcher.entitlements */,
 				2AAE43A727E850FB005A8EE0 /* main.swift */,
+				2AAE43AE27E85254005A8EE0 /* CryptoExtensions.swift */,
 			);
 			path = "mac-ipsw-watcher";
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AAE43AF27E85254005A8EE0 /* CryptoExtensions.swift in Sources */,
 				2AAE43A827E850FB005A8EE0 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +249,8 @@
 		2AAE43AC27E850FB005A8EE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = "mac-ipsw-watcher/mac-ipsw-watcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQW5YTQR8;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -254,6 +262,8 @@
 		2AAE43AD27E850FB005A8EE0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = arm64;
+				CODE_SIGN_ENTITLEMENTS = "mac-ipsw-watcher/mac-ipsw-watcher.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3FQW5YTQR8;
 				ENABLE_HARDENED_RUNTIME = YES;
